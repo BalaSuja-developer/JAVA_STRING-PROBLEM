@@ -1,0 +1,21 @@
+import java.util.*;
+public class PrintOnlyNumbers {
+
+	public static void main(String[] args) {
+		/*QUESTION:
+		 * WRITE A PROGRAM TO PRINT ONLY NUMBERS
+		 * IP:3g%k25i&^^n675y*(*i|%m
+		 * OP:325675
+		 */
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter value mixing of number, alphabet, special charchers : ");
+		String str=sc.nextLine();
+		char x[]=str.toCharArray();
+		for(int i=0;i<x.length;i++) {
+			char a=x[i];
+			if(a>=48 && a<=57) {  //ASCII value of 0 is 48 and 9 is 57
+				System.out.print(a);
+			}
+		}
+	}
+}
