@@ -1,0 +1,24 @@
+import java.util.*;
+public class printcharNumberOfTimes {
+	public static void main(String[] args) {
+		/*QUESTION:
+		 * IP:hel2o
+		 * OP:hello
+		 */
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number and character (eg: hel2o):  ");
+		String str=sc.nextLine();
+		int z=48;
+		for(int i=0;i<str.length();i++) {
+			char a=str.charAt(i);
+			if(a>=48 && a<=57) {  //ASCII value of 0 is 48 and 9 is 57
+				int val=a-z;
+				for(int j=1;j<val;j++) {
+					System.out.print(str.charAt(i-1));
+				}
+			}else {
+				System.out.print(str.charAt(i));
+			}
+		}
+	}
+}
