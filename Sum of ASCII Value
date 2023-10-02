@@ -1,0 +1,21 @@
+import java.util.*;
+public class SumofASCII {
+	public static void main(String[] args) {
+		/*QUESTION:
+		 * summation of the ASCII Value of the each character from the given string
+		 * IP: abcd
+		 * OP: 394
+		 */
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the character which you want to add: ");
+		String str=sc.nextLine();
+		int sum=0;
+		char x[]=str.toCharArray();
+		for(int i=0;i<x.length;i++) {
+			char a=x[i];
+			int b=(int)a; //Type casting is easy to convert char to number
+			sum+=b;
+		}
+		System.out.println(str+" : "+sum);
+	}
+}
